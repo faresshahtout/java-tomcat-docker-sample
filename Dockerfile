@@ -1,4 +1,4 @@
 FROM tomcat:8.0
-ADD **\*.war C:\Users\fares sh\.jenkins\workspace\docker-tomcat-application\src\main\webapp
+ADD **\*.war \usr\local\tomcat\webapps\
 EXPOSE 9090
 CMD ["catalina.sh", "run"]
